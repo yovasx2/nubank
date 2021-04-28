@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  nubank:
+    build: .
+    image: nubank/nubank
+    volumes:
+      - ./:/app
