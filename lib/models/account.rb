@@ -1,5 +1,5 @@
 class Account
-  DEFAULT_VALIDATORS = ['ActiveCard', 'SufficientLimit', 'LowFrequencyInSmallInterval', 'SingleTransaction']
+  DEFAULT_VALIDATORS = ['ActiveCard', 'NonNegativeTransactionAmount', 'SufficientLimit', 'LowFrequencyInSmallInterval', 'SingleTransaction']
 
   attr_accessor :available_limit, :active_card, :violations
   attr_reader :validators, :transactions
